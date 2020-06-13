@@ -3,14 +3,11 @@ import pathlib
 import cv2
 import numpy as np
 import os
-import math
 
-from tensorflow.python.tools import freeze_graph
-from tensorflow.python.tools import optimize_for_inference_lib
-from tensorflow.tools.graph_transforms import TransformGraph
+from tensorflow_core.python.tools import optimize_for_inference_lib
+from tensorflow_core.tools.graph_transforms import TransformGraph
 
-import ESPCN
-import utils
+from ESPCN import utils, ESPCN
 
 
 def training(ARGS):

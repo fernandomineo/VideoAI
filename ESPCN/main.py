@@ -1,4 +1,4 @@
-import run
+from ESPCN import run
 import argparse
 import os
 
@@ -7,7 +7,7 @@ if __name__ == "__main__":
     parser.add_argument('--train', help='Start training the model.', action="store_true")
     parser.add_argument('--test', help='Run tests on the model', action="store_true")
     parser.add_argument('--export', help='Export model to .pb and .pbtxt format', action="store_true")
-    parser.add_argument('--traindir', help='Training images directory', default="./Test")
+    parser.add_argument('--traindir', help='Training images directory', default="./train")
     parser.add_argument('--testimg', help='Test image', default="./Test/t1.png")
     parser.add_argument('--scale', help='Scaling factor of the model', default=2)
     parser.add_argument('--epoch', help='Number of epochs during training', default=100)
