@@ -43,7 +43,7 @@ if __name__ == "__main__":
 
     # INIT
     scale = args.scale
-    meanbgr = [116.61136189, 85.19426153, 59.40825066]
+    meanbgr = [114.35629928, 111.561547, 103.1545782]
 
     # Set checkpoint paths for different scales and models
     ckpt_path = ""

@@ -197,5 +197,5 @@ def img_train_test_split(img_source_dir, train_size):
     print('Copied ' + str(validation_counter) + ' images to data/validation/')
 
 
-#print(calcmean('./../images/', False))
-img_train_test_split('images/', 0.7)
+#print(calcmean('./../train/', False))
+#img_train_test_split('images/', 0.7)

@@ -132,9 +132,9 @@ class run:
                                                                                                          float(
                                                                                                              train_loss / step),
                                                                                                          (
-                                                                                                                     tot_val_psnr / val_im_cntr),
+                                                                                                                 tot_val_psnr / val_im_cntr),
                                                                                                          (
-                                                                                                                     tot_val_ssim / val_im_cntr)))
+                                                                                                                 tot_val_ssim / val_im_cntr)))
                 save_path = saver.save(sess, self.ckpt_path + "edsr_ckpt")
 
             print("Training finished.")
