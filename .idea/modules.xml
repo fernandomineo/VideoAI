@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../DPSR/.idea/DPSR.iml" filepath="$PROJECT_DIR$/../DPSR/.idea/DPSR.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../KAIR/.idea/KAIR.iml" filepath="$PROJECT_DIR$/../KAIR/.idea/KAIR.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/VideoAI.iml" filepath="$PROJECT_DIR$/.idea/VideoAI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../iSeeBetter/.idea/iSeeBetter.iml" filepath="$PROJECT_DIR$/../iSeeBetter/.idea/iSeeBetter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../image_deblur_code/.idea/image_deblur_code.iml" filepath="$PROJECT_DIR$/../image_deblur_code/.idea/image_deblur_code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../motionblur/.idea/motionblur.iml" filepath="$PROJECT_DIR$/../motionblur/.idea/motionblur.iml" />
+    </modules>
+  </component>
+</project>
