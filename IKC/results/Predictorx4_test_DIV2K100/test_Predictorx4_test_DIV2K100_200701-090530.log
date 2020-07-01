@@ -1,0 +1,74 @@
+20-07-01 09:05:30.328 - INFO:   name: Predictorx4_test_DIV2K100
+  suffix: None
+  model: predictor
+  distortion: sr
+  scale: 4
+  crop_border: None
+  gpu_ids: [0]
+  step: 7
+  datasets:[
+    test1:[
+      name: div2k100
+      mode: LQGTker
+      dataroot_GT: None
+      dataroot_LQ: /Users/srbrappleuser4/PycharmProjects/IKC/test_img/
+      phase: test1
+      scale: 4
+      data_type: img
+    ]
+  ]
+  network_G:[
+    which_model_G: Predictor
+    in_nc: 3
+    out_nc: 3
+    nf: 64
+    nb: 16
+    upscale: 4
+    code_length: 10
+    scale: 4
+  ]
+  path:[
+    pretrain_model_G: /Users/srbrappleuser4/PycharmProjects/IKC/checkpoints/Predictor_latest_G.pth
+    root: /Users/srbrappleuser4/PycharmProjects/IKC
+    results_root: /Users/srbrappleuser4/PycharmProjects/IKC/results/Predictorx4_test_DIV2K100
+    log: /Users/srbrappleuser4/PycharmProjects/IKC/results/Predictorx4_test_DIV2K100
+  ]
+  is_train: False
+
+20-07-01 09:05:30.329 - INFO:   name: Correctorx4_test_DIV2K100
+  suffix: None
+  model: corrector
+  distortion: sr
+  scale: 4
+  crop_border: None
+  gpu_ids: [0]
+  step: 7
+  datasets:[
+    test_1:[
+      name: div2k100
+      mode: LQGTker
+      dataroot_GT: None
+      dataroot_LQ: /Users/srbrappleuser4/PycharmProjects/IKC/test_img/
+      phase: test
+      scale: 4
+      data_type: img
+    ]
+  ]
+  network_G:[
+    which_model_G: Corrector
+    in_nc: 3
+    out_nc: 3
+    nf: 64
+    nb: 16
+    upscale: 4
+    code_length: 10
+    scale: 4
+  ]
+  path:[
+    pretrain_model_G: /Users/srbrappleuser4/PycharmProjects/IKC/checkpoints/Corrector_latest_G.pth
+    root: /Users/srbrappleuser4/PycharmProjects/IKC
+    results_root: /Users/srbrappleuser4/PycharmProjects/IKC/results/Correctorx4_test_DIV2K100
+    log: /Users/srbrappleuser4/PycharmProjects/IKC/results/Correctorx4_test_DIV2K100
+  ]
+  is_train: False
+
