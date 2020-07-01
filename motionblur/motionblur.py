@@ -413,9 +413,12 @@ class Kernel(object):
 
 if __name__ == '__main__':
     image = Image.open("../DPSR/testsets/tosco_img/009.png")
-    #image.show()
-    k = Kernel(size=(100, 100), intensity=0.80)
+    k = Kernel(size=(100, 100), intensity=0.30)
 
     k.displayKernel(save_to="../DPSR/testsets/tosco_img/009_kernel.png", show=True)
 
-    #k.applyTo(image, keep_image_dim=True).show()
+    image2 = Image.open("../DPSR/testsets/tosco_img/009_kernel.png").show()
+
+    k.applyTo(image, keep_image_dim=True).show()
+
+    image.show()
